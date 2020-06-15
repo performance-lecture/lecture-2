@@ -27,7 +27,6 @@ const SurveyChart = () => {
         } else {
             _filter[questionIndex] = itemIndex
         }
-        console.log(_filter)
         setFilter(_filter)
     }
 

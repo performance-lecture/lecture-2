@@ -97,12 +97,5 @@ const Modalbody = styled.div`
     padding: 10px;
     box-sizing: border-box;
 `
-const FlickingItem = styled.div`
-    width: 100%;
-`
-const Img = styled.img`
-    width: 100%;
-`
-
 
 export default ImageModal

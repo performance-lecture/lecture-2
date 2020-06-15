@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Bar = (props) => {
     return (
-        <BarWrapper onClick={props.handleClickBar}>
+        <BarWrapper onClick={props.handleClickBar} isSelected={props.isSelected}>
             <BarInfo>
                 <Percent>{props.percent}%</Percent>
                 <ItemVaue>{props.itemValue}</ItemVaue>
@@ -18,7 +18,7 @@ const BarWrapper = styled.div`
     position: relative;
     margin-bottom: 3px;
     padding: 8px 0;
-    background: #f2f2f2;
+    background: ${({isSelected}) => isSelected ? '#dddddd' : '#f3f3f3'};
 `
 const BarInfo = styled.div`
     width: 100%;

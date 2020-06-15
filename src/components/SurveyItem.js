@@ -30,6 +30,7 @@ const Question = styled.div`
     font-weight: 500;
     font-size: 1.03em;
     padding: 25px 0 8px 0;
+    text-align: left;
 `
 
 export default SurveyItem

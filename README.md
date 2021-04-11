@@ -33,7 +33,7 @@ $ npm run server
 or
 $ yarn server
 ```
-*dev server 와 별개로 새로 실행해 주세요.
+*3번의 dev server 와 다른 콘솔에서 띄워줍니다.
 
 ### 질문
 

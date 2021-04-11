@@ -31,8 +31,9 @@ $ yarn start
 ```
 $ npm run server
 or
-$ yarn server // (new CMD tab)
+$ yarn server
 ```
+*dev server 와 별개로 새로 실행해 주세요.
 
 ### 질문
 

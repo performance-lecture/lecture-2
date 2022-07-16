@@ -81,7 +81,6 @@ const LayerTop = styled(Layer)`
     width: 50vw;
     transform: skew(-20deg);
     margin-left: -50%;
-    width: 100%;
 `
 
 const TopContentWrap = styled(ContentWrap)`
@@ -91,7 +90,6 @@ const TopContentWrap = styled(ContentWrap)`
 `
 
 const TopContent = styled(ContentBody)`
-    left: 25%;
     color: #222;
 `
 

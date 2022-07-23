@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy } from 'react'
+import React, { useEffect, useState, Suspense, lazy } from 'react'
 import styled from 'styled-components'
 import Header from './components/Header'
 import InfoTable from './components/InfoTable'
@@ -10,12 +10,27 @@ const LazyImageModal = lazy(() => import('./components/ImageModal'))
 
 function App() {
     const [showModal, setShowModal] = useState(false)
+    
+    // const handleMouseEnter = () => {
+    //   const component = import('./components/ImageModal')
+    // }
+
+    useEffect(() => {
+      const component = import('./components/ImageModal')
+    }, [])
+  
 
     return (
         <div className="App">
             <Header />
             <InfoTable />
-            <ButtonModal onClick={() => { setShowModal(true) }}>올림픽 사진 보기</ButtonModal>
+            <ButtonModal
+              // onMouseEnter={handleMouseEnter}
+              onClick={() => {
+                setShowModal(true)
+              }}>
+              올림픽 사진 보기
+            </ButtonModal>
             <SurveyChart />
             <Footer />
             <Suspense fallback={null}>
